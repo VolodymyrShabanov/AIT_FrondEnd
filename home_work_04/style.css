@@ -1,0 +1,50 @@
+main {
+  height: 200vh;
+}
+
+/* твой код */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+
+}
+
+body{
+  margin-left: 10px;
+}
+
+.navbar {
+  
+  width: 100%;
+  background-color: rgb(102, 102, 102);
+  padding: 10px 0px 10px;
+  position: sticky;
+  top: 0px;
+}
+
+a {
+  font-family: "NarrowNews", sans-serif;
+  color: white;
+  padding: 10px;
+}
+
+a:hover {
+  color: chartreuse;
+}
+
+@font-face {
+  font-family: "NarrowNews";
+  src: url("./fonts/ClanOT-NarrowNews.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+.button{
+  margin: 15px;
+}
+
+.click{
+  background-color: aqua;
+  
+}

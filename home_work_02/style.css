@@ -1,0 +1,37 @@
+
+
+body{
+  /* задаёт путь до файла */
+  background-image: url("/fon.jpg");
+  /* задает стартовое положение изображения на странице */
+  background-position: center center;
+  /* определяет размер изображения на странице */
+  background-size: cover;
+  /* свойство устанавливает, будет ли повторяться изображение и каким образом */
+  background-repeat: no-repeat;
+  /* cвойство определяет, будет ли фоновое изображение прокручиваться 
+  вместе с остальной частью страницы или будет фиксированным */
+  background-attachment: fixed;
+  color: brown;
+}
+
+div{
+  /* border: 2px solid black; */
+}
+
+img {
+  height: 400px;
+  border: 2px solid gray;
+  display: block;
+  ;
+}
+
+.headline{
+  text-align: center;
+  color: green;
+  text-decoration: underline;
+}
+p{
+  border: 1px solid green;
+}
+
