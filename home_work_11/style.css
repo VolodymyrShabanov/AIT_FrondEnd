@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    margin-left: 10px;
+}
+h1,
+h2 {
+  color: darkcyan;
+}
+
+.form {
+  margin: 10px 0px;
+}
+
+.btnContainer {
+  margin: 10px 0px;
+
+}
+
+.list {
+  margin: 10px 0px;
+  border: 0.5px solid black;
+  padding: 0px 10px;
+}
