@@ -48,9 +48,10 @@ caseForm.addEventListener("submit", (event) => {
   textItem.innerText = `Title: ${event.target.caseTitle.value} |=| Description: ${event.target.descript.value};`;
 
   textItem.style.cursor = "pointer";
-  textItem.style.color = "purple";
+//   textItem.style.color = "purple"; выше приоритет чем у css т.е. перебивает его
 
   textItem.onclick = changeStatus; // ! почему????? не передаем ничего и функция работает
+  textItem.classList.add("caseStyle");
 
   caseList.append(textItem);
   clearInputs(event);
