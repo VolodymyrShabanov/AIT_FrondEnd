@@ -6,6 +6,9 @@ const cars = [
   { brand: "Nissan", price: 25_000, isDiesel: false },
 ];
 
+const copyCars = [...cars];
+const deepCopyCars = structuredClone(cars); // ! для глубокого копирования.
+
 // Option 1
 const halfCars1 = [];
 cars.map((el) => {
@@ -17,17 +20,33 @@ console.log("halfCars1: ", halfCars1);
 const halfCars2 = cars.map(({ brand, isDiesel }) => ({ brand, isDiesel }));
 console.log("halfCars2: ", halfCars2);
 
+// Option 3 - return
+
+const newCars = cars.map((el) => {
+  return { brand: el.brand, isDiesel: el.isDiesel };
+});
+console.log("newCars: ", newCars);
+
 // Task 2
-const onlyDiesel = cars.filter((car) => car.isDiesel === true);
+// Option 1
+// const onlyDiesel = cars.filter((car) => car.isDiesel === true);
+
+//Option 2
+const onlyDiesel = cars.filter((car) => car.isDiesel);
+
 console.log("onlyDiesel: ", onlyDiesel);
 
 // Task 3
-const notDiesel = cars.filter((car) => car.isDiesel !== true);
+// Option 1
+// const notDiesel = cars.filter((car) => car.isDiesel !== true);
+
+// Option 2
+const notDiesel = cars.filter((car) => !car.isDiesel);
 console.log("notDiesel: ", notDiesel);
 
 // Task 4
 const priceOnlyDiesel = cars
-  .filter((car) => car.isDiesel === true)
+  .filter((car) => car.isDiesel)
   .map((car) => car.price)
   .reduce((sum, price) => sum + price, 0);
 
@@ -39,9 +58,7 @@ console.log("cars (price + 20%: ", cars);
 
 // Task 6
 const newCarsWithoutDiesel = cars.map((car) =>
-  car.isDiesel === true
-    ? { brand: "Tesla", price: 25_000, isDiesel: false }
-    : car
+  car.isDiesel ? { brand: "Tesla", price: 25_000, isDiesel: false } : car
 );
 
 console.log("newCarsWithoutDiesel: ", newCarsWithoutDiesel);
@@ -72,3 +89,17 @@ console.log("mondayDoList:", mondayDoList);
 
 toDoList.splice(4, 1);
 console.log("toDoList splice() delete one task: ", toDoList);
+
+// * Глубокая копия массива
+// spread оператор подходит для "поверхностного копирования"
+
+const colors = ["blue", "white", "red", "pink"];
+const copyColors = ["yellow", ...colors, "black"];
+colors.pop();
+
+console.log("colors: ", colors);
+console.log("copyColors: ", copyColors); // элемент pink не удален. 
+
+console.log("cars: ", cars);
+console.log("copyCars: ", copyCars);
+console.log("deepCopyCars: ", deepCopyCars);
