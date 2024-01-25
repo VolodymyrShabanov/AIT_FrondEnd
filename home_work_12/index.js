@@ -13,8 +13,7 @@ result.then((el) => console.log(el)).catch((error) => console.log(error));
 
 // Task 2
 function getDriverLicence(success, failure) {
-  let randomNum = Math.random();
-  if (randomNum > 0.1) {
+  if (Math.random() > 0.1) {
     return success("успех!");
   } else {
     return failure("упс, неудача :(");
@@ -30,3 +29,5 @@ function failure(error) {
 }
 
 getDriverLicence(success, failure);
+
+console.log(Math.floor(Math.random()*10) + 1); // Math.floor() -> округляет до целого числа;

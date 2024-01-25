@@ -75,6 +75,8 @@ body {
   /* background-color: rgb(0, 254, 153); */
 }
 
+/* Search  */
+
 .container {
   /* background: #2f3640; */
   padding: 10px;
@@ -112,6 +114,8 @@ button {
   box-shadow: 0px 0px 10px #39ff14;
   color: white;
 }
+
+/* END Search */
 
 .square {
   box-shadow: 0px 0px 10px #8bf711, 0px 0px 10px #8bf711 inset;
