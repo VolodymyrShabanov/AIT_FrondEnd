@@ -1,0 +1,41 @@
+{
+  "title": "One-Punch Man",
+  "poster": "Anime_OnePunchMan.jpg",
+  "land": "Japan",
+  "genre": ["Action", "Comedy", "Superhero"],
+  "episodes": [
+    { "season": 1, "year": 2015, "number": 12 },
+    { "season": 2, "year": 2019, "number": 12 }
+  ],
+  "role": [
+    {
+      "character": "Saitama",
+      "voiceover": "Makoto Furkawa",
+      "link": "https://de.wikipedia.org/w/index.php?title=Makoto_Furukawa&action=edit&redlink=1"
+    },
+
+    {
+      "character": "Genos",
+      "voiceover": "Kaito Ishikawa", 
+      "link": "https://de.wikipedia.org/w/index.php?title=Kaito_Ishikawa&action=edit&redlink=1"
+    },
+
+    {
+      "character": "Speed-o Sound Sonic",
+      "voiceover": "Yuki Kaji",
+      "link": "https://de.wikipedia.org/wiki/Y%C5%ABki_Kaji"
+    },
+
+    {
+      "character": "Mumen Rider",
+      "voiceover": "Yuchi Nakamura",
+      "link": "https://de.wikipedia.org/wiki/Y%C5%ABichi_Nakamura_(Synchronsprecher)"
+    },
+
+    {
+      "character": "Terrible Tomado",
+      "voiceover": "Aoi Yuki",
+      "link": "https://de.wikipedia.org/wiki/Aoi_Y%C5%ABki"
+    }
+  ]
+}
