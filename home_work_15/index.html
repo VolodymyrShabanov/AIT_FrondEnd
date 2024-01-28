@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Store API</title>
+  </head>
+  <body>
+
+    <h1 class="goods">Goods</h1>
+
+    <form id="form">
+      <label></label>
+      <input type="number" placeholder="input quantity:" name="limit" />
+      <button type="submit">Send</button>
+    </form>
+
+    <div id="errorContainer"></div>
+
+    <div id="loader1" style="display: none" class="loader"></div>
+
+    <div id="container" class="container"></div>
+  
+
+    <div id="loader" class="loader" style = "display: none;">
+      <span id="conter" class = wave>
+        Loading
+        <i class = "wave_item"></i>
+        <i class = "wave_item"></i>
+        <i class = "wave_item"></i>
+      </span>
+      <div class="spinner"></div>
+    </div>
+    
+
+
+  </body>
+</html>
