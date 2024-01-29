@@ -28,7 +28,7 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-showResult(1);
+showResult(10);
 loader.style.display = "block";
 
 function showResult(data) {
