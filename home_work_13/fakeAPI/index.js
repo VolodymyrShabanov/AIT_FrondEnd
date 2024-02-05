@@ -9,9 +9,7 @@ getFilm();
 
 async function getFilm() {
   try {
-    const res = await fetch(
-      "https://volodymyrshabanov.github.io/star-wars/star_wars.json"
-    );
+    -
 
     if (!res.ok) {
       console.log("res.status: ", res.status);
